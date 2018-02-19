@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.47" >
+
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/textViewSwipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/swipe_left_to_continue"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white" >
+        
+        <ImageView
+        android:id="@+id/imageViewDotButton1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/dot_green2x"
+        android:contentDescription="@string/imageViewDescription" />
+        
+         <ImageView
+             android:id="@+id/imageViewDotButton2"
+             android:layout_width="10dp"
+             android:layout_height="10dp"
+             android:layout_gravity="bottom"
+             android:layout_marginLeft="10dp"
+             android:contentDescription="@string/imageViewDescription"
+             android:src="@drawable/dot_beige2x" />
+         
+          <ImageView
+              android:id="@+id/imageViewDotButton3"
+              android:layout_width="10dp"
+              android:layout_height="10dp"
+              android:layout_gravity="bottom"
+              android:layout_marginLeft="10dp"
+              android:contentDescription="@string/imageViewDescription"
+              android:src="@drawable/dot_beige2x" />
+          
+           <ImageView
+               android:id="@+id/imageViewDotButton4"
+               android:layout_width="10dp"
+               android:layout_height="10dp"
+               android:layout_gravity="bottom"
+               android:layout_marginLeft="10dp"
+               android:contentDescription="@string/imageViewDescription"
+               android:src="@drawable/dot_beige2x" />
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="fill_horizontal|bottom"
+        android:baselineAlignBottom="true"
+        android:contentDescription="@string/imageViewDescription"
+        android:scaleType="fitXY"
+        android:src="@drawable/grass_bg2x" />
+
+</LinearLayout>

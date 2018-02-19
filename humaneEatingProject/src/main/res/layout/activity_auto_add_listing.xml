@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    tools:context=".addlisting.AutoAddListingActivity"
+                    android:id="@+id/auto_add_listing"
+                android:nestedScrollingEnabled="false"
+    >
+    <TextView
+        android:id="@+id/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:background="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="@string/auto_add_listing"
+        android:textSize="13dp"
+        android:paddingRight="10dp"
+        android:layout_alignBottom="@+id/top_section"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/qualifications"
+        android:layout_toStartOf="@+id/qualifications"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/qualifications"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/qualifications"
+        android:background="@drawable/start_btn_touch_up2x"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/white"
+        android:textSize="13dp"
+        android:nestedScrollingEnabled="false"
+        android:singleLine="false"
+        android:layout_alignTop="@+id/explanation"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginRight="10dp"
+        android:gravity="center"/>
+
+    <FrameLayout
+        android:id="@+id/restaurant_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_section"
+        android:layout_centerHorizontal="true">
+    </FrameLayout>
+
+    <!--
+    <ListView
+        android:id="@+id/restaurant_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_section"
+        android:isScrollContainer="false"
+        tools:listitem="@layout/row_restaurant_plain">
+    </ListView>
+    -->
+
+</RelativeLayout>

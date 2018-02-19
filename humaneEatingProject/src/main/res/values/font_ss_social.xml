@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ic_facebook">0xF610</integer>
+    <integer name="ic_twitter">0xF611</integer>
+    <integer name="ic_like">0x1F44D</integer>
+
+
+</resources>

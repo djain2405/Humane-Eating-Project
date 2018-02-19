@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prefs_name">HEP_PREFS</string>
+
+    <!-- Facebook Prefs -->
+    <string name="last_feed_read">last_feed_read</string>
+</resources>

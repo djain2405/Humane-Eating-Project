@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/imageViewDescription"
+        android:src="@drawable/welcome_icon_share2x" />
+
+    <TextView
+        android:id="@+id/spread_the_word_string1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/spread_the_word_string1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/spread_the_word_string2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/spread_the_word_string2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <com.facebook.share.widget.ShareButton
+            android:id="@+id/fb_button"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/tweet_button"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_tweet"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                android:id="@+id/twitter_logo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/twitter_logo_white"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/twitter_logo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:text="Tweet"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/email_button"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_email"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_email_white_24dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/get_started_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/start_buttons"
+        android:text="@string/get_started_string"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/disable_future_welcome_page_display_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/disable_future_welcome_page_string"
+        android:textSize="@dimen/text_secondary"/>
+
+</LinearLayout>

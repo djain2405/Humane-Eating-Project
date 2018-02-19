@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_pages_parent_layout"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <org.hep.afa.view.DetailsItemView
+        android:id="@+id/pages_detail_view"
+        android:background="@drawable/layout_selector"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/detail_height"
+        android:paddingRight="@dimen/spacing_default"
+        android:paddingLeft="5dp"
+        android:layout_toLeftOf="@+id/pages_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:id="@+id/pages_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/spacing_default"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/website_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_web"
+            android:text="@string/Web"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/facebook_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/Facebook"
+            android:background="@drawable/selector_facebook"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/twitter_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="15sp"
+            android:background="@drawable/selector_tweet"
+            android:textColor="@color/white"
+            android:text="@string/Twitter"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

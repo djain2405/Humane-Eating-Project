@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hep_bitmap_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_height="50dp"
+        android:background="@color/light_green">
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="@string/app_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_buttons"
+            android:clickable="true"
+            android:drawableTop="@drawable/friends_2x"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingTop="10dp"
+            android:text="@string/friends"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/button_take_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_buttons"
+            android:clickable="true"
+            android:drawableTop="@drawable/take_action_2x"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingTop="10dp"
+            android:text="@string/take_action"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/button_learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_buttons"
+            android:clickable="true"
+            android:drawableTop="@drawable/map_learn_icon2x"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingTop="10dp"
+            android:text="@string/string_learn"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:id="@+id/button_feed_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_buttons"
+            android:clickable="true">
+        <Button
+            android:id="@+id/button_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:drawableTop="@drawable/map_feed_icon2x"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingTop="10dp"
+            android:text="@string/feed_actionbar"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/feed_notification"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="1dp"
+                android:layout_alignTop="@id/button_feed"
+                android:layout_alignLeft="@id/button_feed"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/shape_drawable_circle"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_filter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_filter_list_black_24dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:alpha="0.7"
+        android:padding="3dp"/>
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button_legend"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.7"
+        android:background="@color/white"
+        android:padding="3dp"/>
+
+    <ImageButton
+        android:id="@+id/button_add_listing"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="3dp"
+        android:src="@drawable/ic_add_circle_outline_black_24dp"
+        android:alpha="0.7"
+        android:background="@color/white"/>
+
+
+</RelativeLayout>

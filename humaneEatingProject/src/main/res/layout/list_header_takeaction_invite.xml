@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="20dp">
+
+    <TextView
+        android:id="@+id/takeaction_invite_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_action_invite_shoutout"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Facebook and Twitter Button layouts -->
+    <LinearLayout
+        android:id="@+id/invite_fb_twitter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/takeaction_invite_header_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <com.facebook.share.widget.ShareButton
+            android:id="@+id/takeaction_invite_fb"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/takeaction_invite_twitter"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_tweet"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/twitter_logo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/twitter_logo_white"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/twitter_logo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:text="Tweet"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Email invite header text (including here as part of same header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invite_fb_twitter_layout"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/text_primary"
+        android:text="@string/take_action_invite_email"/>
+
+</RelativeLayout>

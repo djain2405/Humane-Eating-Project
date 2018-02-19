@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white">
+
+    <!-- user profile image view -->
+    <RelativeLayout
+        android:id="@+id/comments_profile_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/comment_user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comment_header_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/comments_profile_image_layout">
+
+        <TextView
+            android:id="@+id/comment_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/comment_time_ago"
+            android:layout_centerVertical="true"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/comment_time_ago"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_header_layout"
+        android:layout_alignLeft="@+id/comment_header_layout"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="2dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:background="@android:color/white"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp">
+
+    <!-- HEP image holder -->
+    <RelativeLayout
+        android:id="@+id/profile_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/fb_link_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <!-- Posted date and options layout -->
+    <RelativeLayout
+        android:id="@+id/posted_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/profile_image_layout">
+
+        <TextView
+            android:id="@+id/fb_posted_time_ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_disabled"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/fb_feed_more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_more_horiz_black_36dp"/>
+
+    </RelativeLayout>
+
+
+        <!-- post text -->
+        <TextView
+            android:id="@+id/fb_post_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/posted_date_layout"
+            android:layout_toRightOf="@id/profile_image_layout"
+            android:layout_marginRight="10dp"
+            android:textColorLink="@color/feed_link_color"
+            android:linksClickable="true"
+            android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/fb_post_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/fb_post_message"
+        android:layout_alignLeft="@id/fb_post_message"
+        android:textColorLink="@color/feed_link_color"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

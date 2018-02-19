@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#759D35</color>
+    <color name="primary_dark">#759D35</color>
+    <color name="primary_light">#4CAF50</color>
+    <color name="accent">#30A5D8</color>
+    <color name="accent_light">#FF80AB</color>
+
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#727272</color>
+    <color name="text_disabled">#B8B8B8</color>
+
+    <color name="icon_active">#757575</color>
+    <color name="icon_inactive">#BDBDBD</color>
+    <color name="separator">#9B99A6</color>
+
+    <color name="red">#F44336</color>
+    <color name="pink">#E91E63</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#2196F3</color>
+    <color name="light_blue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+    <color name="blue_grey">#607D8B</color>
+    <color name="green">#4CAF50</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="amber">#FF9800</color>
+    <color name="orange">#FF5722</color>
+    <color name="brown">#795548</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="dark_gray">#4E4E4E</color>
+    <color name="black">#000000</color>
+
+    <color name="tan_light">#D2D5D6</color>
+
+    <color name="feed_background_color">@color/tan_light</color>
+    <color name="feed_link_color">@color/blue</color>
+
+    <color name="take_action_button_color">@color/tan_light</color>
+
+    <color name="transparent_overlay">#70000000</color>
+
+    <!-- social colors -->
+    <color name="twitter_blue">#1DA1F2</color>
+    <color name="twitter_select_color">#006EBF</color>
+    <color name="email_tan">#DED4C0</color>
+    <color name="email_select_color">#C5BBA7</color>
+    <color name="web_green">@color/light_green</color>
+    <color name="web_green_select_color">#72AA31</color>
+    <color name="facebook_blue">#3B5998</color>
+    <color name="facebook_select_color">#22407f</color>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:text="Legend"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    
+    <Button
+        android:id="@+id/map_it"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/action_bar_custom_buttons"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY" 
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+         android:layout_marginRight="10dp"
+        android:text="  Map It  " />
+    
+
+</LinearLayout>

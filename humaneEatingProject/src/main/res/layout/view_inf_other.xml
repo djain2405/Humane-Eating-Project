@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.johnkil.print.PrintView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_small"
+        app:iconColor="@color/green"
+        app:iconSize="@dimen/fab_icon_size"
+        app:iconText="@string/ic_place" />
+
+
+    <TextView
+        android:fontFamily="sans-serif-light"
+        android:textSize="@dimen/text_big"
+        android:text="Humane-Friendly"
+        android:id="@+id/textLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green" />
+
+
+</merge>

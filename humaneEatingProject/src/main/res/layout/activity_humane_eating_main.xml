@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/myCoordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/flip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.hep.afa.view.ParentFrameLayout
+            android:id="@+id/map_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout1">
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.hep.afa.view.ParentFrameLayout>
+
+        <com.github.pengrad.mapscaleview.MapScaleView
+            android:id="@+id/scaleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:scale_miles="true"
+            app:scale_color="#009"
+            app:scale_strokeWidth="2dp"
+            android:layout_margin="4dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/HEP_BottomNavButton"
+                android:id="@+id/button_friends"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_buttons"
+                android:clickable="true"
+                android:drawableTop="@drawable/friends_2x"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingTop="10dp"
+                android:text="@string/friends"
+                android:textColor="@android:color/white" />
+
+            <Button
+                style="@style/HEP_BottomNavButton"
+                android:id="@+id/button_take_action"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_buttons"
+                android:clickable="true"
+                android:drawableTop="@drawable/take_action_2x"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingTop="10dp"
+                android:text="@string/take_action"
+                android:textColor="@android:color/white" />
+
+            <Button
+                style="@style/HEP_BottomNavButton"
+                android:id="@+id/button_learn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_buttons"
+                android:clickable="true"
+                android:drawableTop="@drawable/map_learn_icon2x"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingTop="10dp"
+                android:text="@string/string_learn"
+                android:textColor="@android:color/white" />
+
+            <RelativeLayout
+                android:id="@+id/button_feed_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_buttons"
+                android:clickable="true">
+
+                <Button
+                    style="@style/HEP_BottomNavButton"
+                    android:id="@+id/button_feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:drawableTop="@drawable/map_feed_icon2x"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:paddingTop="10dp"
+                    android:text="@string/feed_actionbar"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/feed_notification"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_alignTop="@id/button_feed"
+                    android:layout_alignLeft="@id/button_feed"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/shape_drawable_circle"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_filter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/map_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_filter_list_black_24dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:alpha="0.7"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/filter_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/filter_on"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/SearchEditText"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/search_view_parent"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <SearchView
+                android:id="@+id/simpleSearchView"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittext_rounded_corners">
+                <requestFocus />
+            </SearchView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Search:"
+            android:padding="7dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/SearchEditText"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="false"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/button_legend"
+            android:layout_alignBottom="@+id/map_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_location_on_black_24dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.7"
+            android:background="@color/white"
+            android:padding="3dp"/>
+
+        <ImageButton
+            android:id="@+id/button_add_listing"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/map_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_add_circle_outline_black_24dp"
+            android:alpha="0.7"
+            android:background="@color/white"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/main_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/progress_rotate"
+            android:indeterminate="true" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

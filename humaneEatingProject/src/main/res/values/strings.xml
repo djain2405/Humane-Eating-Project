@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GENERAL STRINGS -->
+    <string name="app_name">Humane Eating Project</string>
+    <string name="app_text">Humane Eating</string>
+    <string name="about">about</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="Help">Help</string>
+    <string name="imageViewDescription"></string>
+    <string name="humane_reason">Reason:</string>
+    <string name="invalid_cuisine">choose one</string>
+
+    <string name="url_home">http://m.humaneeatingproject.org</string>
+
+    <!-- HEP STATUS STRING -->
+    <string name="status_watch_list">Watch List</string>
+    <string name="status_humane_friendly">Humane-Friendly</string>
+    <string name="status_vegetarian">Vegetarian</string>
+    <string name="status_vegan">Vegan</string>
+    <string name="status_vegan_friendly">Vegan-Friendly</string>
+    <string name="status_vegetarian_friendly">Vegetarian-Friendly</string>
+    <string name="status_optional">Optional</string>
+
+    <!-- HEP Price Range String -->
+    <string name="price_inexpensive_symbol">$</string>
+    <string name="price_average_symbol">$$</string>
+    <string name="price_expensive_symbol">$$$</string>
+    <string name="price_inexpensive">Inexpensive</string>
+    <string name="price_average">Average</string>
+    <string name="price_expensive">Expensive</string>
+
+    <!-- Constants -->
+    <string name="True">TRUE</string>
+    <string name="False">FALSE</string>
+    <string name="list">List</string>
+    <string name="map">Map</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="open">Open</string>
+    <string name="ok">OK</string>
+    <string name="share">Share</string>
+
+    <!-- no_connectivity text to match iOS dialog in feed -->
+    <string name="no_connectivity">It appears there is no available network connection.
+        Try to find a Wifi point or look at your device settings</string>
+
+    <!-- tag for dialog fragments in case we need to ever check one is already displayed -->
+    <string name="dialog_fragment_tag">dialog</string>
+
+    <string name="no_wifi_conn">Turn-ON Internet and Refresh</string>
+    <string name="enable">Turn-On</string>
+
+    <string name="string_feedback">Feedback</string>
+    <string name="swipe_left_to_continue">Swipe left to continue</string>
+
+    <string name="string_congratulations">Congratulations!</string>
+    <string name="string_more_you_can_do">There\'s more you can do now...</string>
+    <string name="title_main">Restaurants</string>
+    <string name="welcome_first">Just using this app will make a big</string>
+    <string name="welcome_second">difference in reducing animal suffering.</string>
+    <string name="welcome_page">Welcome!</string>
+    <string name="zoom_in">Please zoom in the map to get search results</string>
+    <string name="zoom_in_action">Zoom Now</string>
+
+    <!-- FOR SHARING : TWEET, FACEBOOK, EMAIL ... -->
+    <string name="email_feedback_subject">Android Beta Feedback (0.9.1)</string>
+    <string name="email_feedback_body">We love feedback! Tell us anything you\'d like. Screenshots are nice and if you know it, the make/model of your device and android version.</string>
+    <string name="email_invitation_share_title">@string/spread_the_word_string1</string>
+    <string name="email_invitation_subject">Check out this new app: Humane Eating Project</string>
+    <string name="email_invitation_body">
+        Check out this new app that makes it easy to find restaurants with humane options(humanely-raised, vegan or vegetarian).
+        Just by using this app, you can make a big difference in the lives of farm animals.
+        \n\n http://humaneeatingproject.org</string>
+    <string name="email_no_client">There are no email clients installed.</string>
+    <string name="email_contact_subject">Hi! Question about your restaurant</string>
+    <string name="email_contact_body">\n\n\n Sent from the Humane Eating Project https://humaneeatingproject.org</string>
+    <string name="email_choose">Choose an Email Client :</string>
+    <string name="tweet_body">Have you seen this app?\n@HumaneEating. I downloaded it and thought you might also like it!</string>
+    <string name="tweet_restaurant_body_long">I just ate humanely at %1$s thanks to the Humane Eating App @HumaneEating</string>
+    <string name="tweet_restaurant_body_short">I just ate humanely at %1$s thanks to @HumaneEating</string>
+    <string name="url_tweet_template">https://twitter.com/intent/tweet?text=</string>
+    <string name="url_facebook">https://www.facebook.com/Humaneeatingproject</string>
+    <string name="facebook_share_message">Have you seen this app? https://www.facebook.com/Humaneeatingproject. I downloaded it and thought you might also like it!</string>
+    <string name="facebook_share_url">http://www.humaneeating.americaforanimals.org</string>
+
+    <!-- Filter -->
+    <string name="filter">Filter</string>
+    <string name="filter_on">Filters: On</string>
+    <string name="humane_status">HUMANE STATUS</string>
+    <string name="cuisine_type">CUISINE</string>
+    <string name="price_range">PRICE</string>
+    <string name="distance_range">DISTANCE</string>
+    <string name="filter_rating">RATING</string>
+    <string name="filter_reviews">REVIEWS</string>
+
+    <!-- Donate -->
+    <string name="donate">&#160; Donate &#160;</string>
+    <string name="donate_help">We Need Your Help</string>
+    <string name="donate_now">Donate Now</string>
+    <string name="donate_body">Did you know that Humane Eating Project was developed by a non-profit group called America for Animals? Please make a donation today so that we can keep making improvements and reduce animal suffering.</string>
+    <string name="donate_afa">AFA is a registered 501(c) non-profit organization. \n All donations are tax deductible.</string>
+    <string name="url_donate">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=N3RWNENEEEVT6</string>
+
+    <!-- Friends -->
+    <string name="friends">Friends</string>
+
+    <!-- Take Action -->
+    <string name="take_action">Take Action</string>
+    <string name="take_action_survey">Take a 5 min Survey</string>
+    <string name="take_action_shoutout">Give us a Shout Out</string>
+    <string name="take_action_invite">Invite your Friends</string>
+    <string name="take_action_add_restaurant">Add a Restaurant</string>
+    <string name="take_action_learn">Learn about the Cause</string>
+    <string name="take_action_talk">Talk to Restaurants</string>
+    <string name="take_action_volunteer">Volunteer with AFA</string>
+    <string name="take_action_actionbar_add_listing">Add Listing</string>
+    <string name="take_action_volunteer_text">We have many volunteer positions listed at VolunteerMatch.
+        Please visit the site below and see if there is a fit.  If you would like to volunteer in a
+        different capacity, please email us at info@humaneeatingproject.org.</string>
+    <string name="take_action_nonprofit_text">AFA is a registered 501(c) non-profit. \n All donations
+        are tax deductible.</string>
+    <string name="volunteer_match">Go To VolunteerMatch</string>
+    <string name="take_action_invite_shoutout">Shout us out on FB &amp; Twitter!</string>
+    <string name="take_action_invite_email">Invite your friends via email:</string>
+    <string name="take_action_actionbar_invite_title">Friends</string>
+    <string name="take_action_actionbar_invite">Invite</string>
+    <string name="take_action_no_twitter">Unable to share with Twitter.</string>
+    <string name="take_action_share_conf">Have you shared the app with your friends yet?</string>
+    <string name="take_action_share_fb">Share</string>
+    <string name="take_action_share_twitter">Tweet</string>
+
+    <!-- Survey Strings -->
+    <string name="survey_help">We Need Your Help</string>
+    <string name="survey_info">In order to improve our app, we could REALLY use your help in answering a few questions.</string>
+    <string name="survey_url">http://americaforanimals.com/humane-eating-survey</string>
+
+
+    <!-- Legend -->
+    <string name="string_legend"> &#160; Legend &#160;  </string>
+    <string name="url_legend">http://mobileapp.humaneeatingproject.org/info/legend.html</string>
+
+    <!-- Learn -->
+    <string name="string_learn">Learn</string>
+    <string name="url_learn">http://mobileapp.humaneeatingproject.org/info/info.html</string>
+
+    <!-- Feed -->
+    <string name="feed_actionbar">Feed</string>
+    <string name="comments_actionbar">Post Comments</string>
+    <string name="feed_header_actionbar">The Feed</string>
+    <string name="hashtag_scheme">humaneeatingproject.hashtag</string>
+    <string name="url_scheme">humaneeatingproject.url</string>
+    <string name="hashtag_user_conf">Would you like to open posts with %1s tag?</string>
+    <string name="url_user_conf">Would you like to open this link?</string>
+    <string name="feed_header_text">Learn. Interact. Share.</string>
+    <string name="feed_userpage_conf">Open Humane Eating Project\'s Facebook page?</string>
+    <string name="feed_share_conf">Share this post?</string>
+    <string name="view_post_conf">View this post?</string>
+    <string name="empty_feed_text">The Feed is currently unavailable</string>
+    <string name="feed_no_comments">There are no comments for this item!</string>
+    <string name="share_with_fb">Share with Facebook</string>
+    <string name="show_comments">Show Comments</string>
+
+    <!-- Add Listings -->
+    <string name="add_listing">Add Listing</string>
+    <string name="add_manually">Add Manually</string>
+    <string name="qualifications">Qualifications</string>
+    <string name="auto_add_listing">We\'ve found some restaurants near you. Please make sure they qualify, then select the restaurant to add or press Add Manually.</string>
+    <string name="add_listing_string1">Add your favorite Humane restaurants</string>
+    <string name="add_listing_string2">and watch out for restuarants selling</string>
+    <string name="add_listing_string3">Watch listed foods - add those</string>
+    <string name="add_listing_string4">restuarants too.</string>
+    <string name="watch_listed_food">Watch listed foods - add those restaurants too</string>
+    <string name="empty_restaurant_list">No restaurants found."</string>
+    <!-- Add Listings (Restaurant) Constants -->
+    <string name="POPULATE">POPULATE</string>
+    <string name="OBJECT_ID">OBJECT_ID</string>
+    <string name="RESTAURANT_NAME">RESTAURANT_NAME</string>
+    <string name="ADDRESS">ADDRESS</string>
+    <string name="CITY">CITY</string>
+    <string name="STATE">STATE</string>
+    <string name="COUNTRY">COUNTRY</string>
+    <string name="POSTAL">POSTAL</string>
+    <string name="PHONE">PHONE</string>
+    <string name="HOMEPAGE">HOMEPAGE</string>
+    <string name="EMAIL">EMAIL</string>
+    <string name="FACEBOOK">FACEBOOK</string>
+    <string name="TWITTER">TWITTER</string>
+    <string name="LATITUDE">LATITUDE</string>
+    <string name="LONGITUDE">LONGITUDE</string>
+
+    <!-- Restaurant Detail / List,Map Views -->
+    <string name="hep_sponsor">This restaurant has donated to the Humane Eating Project!</string>
+    <string name="telephone">Telephone</string>
+    <string name="address">Address</string>
+    <string name="website">website</string>
+    <string name="other_cuisines">Other Cuisines</string>
+    <string name="additional_features">Additional Features</string>
+    <string name="yelp_reviews">%d Yelp Reviews</string>
+    <string name="no_reviews">No Reviews</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="submitted_by">Submitted By</string>
+    <string name="Twitter">Twitter</string>
+    <string name="Web">Web</string>
+    <string name="Facebook">Facebook</string>
+    <string name="pages_section">Pages</string>
+    <string name="menu_section">Menu</string>
+
+
+    <string name="url_edit_listing">http://mobileapp.humaneeatingproject.org/listings/editListing.html</string>
+    <string name="url_list_view">http://m.humaneeatingproject.org/#!/?view=list</string>
+    <string name="url_map_view">http://m.humaneeatingproject.org/#!/?view=map</string>
+
+    <!-- Welcome Page strings for Talk to Restaurants. -->
+    <string name="talk_to_restaurants_string1">Talk to Restaurants</string>
+    <string name="talk_to_restaurants_string2">If they are not listed as a Humane</string>
+    <string name="talk_to_restaurants_string3">restaurants, talk to them about adding</string>
+    <string name="talk_to_restaurants_string4">Humane-Friendly options to their menu</string>
+    <string name="talk_to_restaurants_string5">or adding a vegan/vegetarian menu.</string>
+    
+     <!-- Welcome Page strings for Spread the Word. -->
+    <string name="spread_the_word_string1">Spread the Word</string>
+    <string name="spread_the_word_string2">Let your friends know about us!</string>
+    <string name="like_facebook">   Like</string>
+    <string name="tweet">   Tweet</string>
+    <string name="get_started_string">Get Started</string>
+    <string name="disable_future_welcome_page_string">Don\'t show welcome page again</string>
+    <!--<string name="fb_id">752008904888808</string>-->
+    <string name="fb_id">241032352751451</string>
+    <string name="title_activity_auto_add_listing">AutoAddListingActivity</string>
+
+</resources>

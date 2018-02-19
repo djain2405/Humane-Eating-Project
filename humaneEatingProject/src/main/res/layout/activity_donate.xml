@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/donate_image"
+        android:src="@drawable/logo_icon2x"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/donate_help"
+        android:id="@+id/donate_help"
+        android:layout_below="@+id/donate_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/donate_body"
+        android:id="@+id/donate_body"
+        android:layout_below="@+id/donate_help"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_big"
+        />
+
+    <Button
+        android:id="@+id/donate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/donate_now"
+        android:background="@drawable/start_btn_touch_up2x"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_huge"
+        android:nestedScrollingEnabled="false"
+        android:singleLine="false"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:layout_below="@+id/donate_body"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/donate_afa"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="@dimen/text_secondary"
+        />
+
+</RelativeLayout>

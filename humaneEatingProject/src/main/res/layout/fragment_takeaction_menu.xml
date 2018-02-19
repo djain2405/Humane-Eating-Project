@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <!-- Donate -->
+        <LinearLayout
+            style="@style/HEP_TakeActionButtonStyle"
+            android:id="@+id/donate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                style="@style/HEP_TakeActionImageStyle"
+                android:layout_width="72dp"
+                android:layout_height="35dp"
+                android:src="@drawable/donate_2x" />
+
+            <TextView
+                style="@style/HEP_TakeActionButtonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donate"/>
+        </LinearLayout>
+
+        <!-- Survey -->
+        <LinearLayout
+            style="@style/HEP_TakeActionButtonStyle"
+            android:id="@+id/survey_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                style="@style/HEP_TakeActionImageStyle"
+                android:layout_width="34dp"
+                android:layout_height="35dp"
+                android:src="@drawable/survey_2x" />
+
+            <TextView
+                style="@style/HEP_TakeActionButtonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_action_survey"/>
+        </LinearLayout>
+
+        <!-- Shout Out -->
+        <LinearLayout
+            style="@style/HEP_TakeActionButtonStyle"
+            android:id="@+id/shoutout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                style="@style/HEP_TakeActionImageStyle"
+                android:layout_width="53dp"
+                android:layout_height="35dp"
+                android:src="@drawable/shoutout_2x" />
+
+            <TextView
+                style="@style/HEP_TakeActionButtonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_action_shoutout"/>
+        </LinearLayout>
+
+        <!-- Invite Friends -->
+        <LinearLayout
+            style="@style/HEP_TakeActionButtonStyle"
+            android:id="@+id/invite_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                style="@style/HEP_TakeActionImageStyle"
+                android:layout_width="29dp"
+                android:layout_height="35dp"
+                android:src="@drawable/invitefriends_2x" />
+
+            <TextView
+                style="@style/HEP_TakeActionButtonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_action_invite"/>
+        </LinearLayout>
+
+        <!-- Add Restaurant -->
+        <LinearLayout
+            style="@style/HEP_TakeActionButtonStyle"
+            android:id="@+id/add_restaurant_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                style="@style/HEP_TakeActionImageStyle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/addrestaurant_2x" />
+
+            <TextView
+                style="@style/HEP_TakeActionButtonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_action_add_restaurant"/>
+        </LinearLayout>
+
+        <!-- Learn -->
+        <LinearLayout
+            style="@style/HEP_TakeActionButtonStyle"
+            android:id="@+id/learn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                style="@style/HEP_TakeActionImageStyle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/learn_2x" />
+
+            <TextView
+                style="@style/HEP_TakeActionButtonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_action_learn"/>
+        </LinearLayout>
+
+        <!-- Talk to Restaurants -->
+        <LinearLayout
+            style="@style/HEP_TakeActionButtonStyle"
+            android:id="@+id/talk_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                style="@style/HEP_TakeActionImageStyle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/talk_2x" />
+
+            <TextView
+                style="@style/HEP_TakeActionButtonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_action_talk"/>
+        </LinearLayout>
+
+        <!-- Volunteer -->
+        <LinearLayout
+            style="@style/HEP_TakeActionButtonStyle"
+            android:id="@+id/volunteer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                style="@style/HEP_TakeActionImageStyle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/volunteer_2x" />
+
+            <TextView
+                style="@style/HEP_TakeActionButtonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_action_volunteer"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

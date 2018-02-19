@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <!--this is to give gradient effect   -->
+<gradient   android:angle="270"
+            android:startColor="#624221"
+            android:endColor="#583b1d"
+            />
+    
+
+</shape>

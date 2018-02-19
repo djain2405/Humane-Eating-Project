@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "56564910566",
+    "firebase_url": "https://humane-eating.firebaseio.com",
+    "project_id": "humane-eating",
+    "storage_bucket": "humane-eating.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56564910566:android:4cb76bf996596e68",
+        "android_client_info": {
+          "package_name": "org.hep.afa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56564910566-3o686st7e26u98mc7dra6k5caiu1m49q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.hep.afa",
+            "certificate_hash": "4000DF6073EA7D9CECF3E68EB63E8F68A2ECBEB3"
+          }
+        },
+        {
+          "client_id": "56564910566-pbl6vg83nb65v855cr9uhq0uvot5p5g0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD5W4KhsuBot2U6h9gR-eXbOFzZ44Zqd8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56564910566-pbl6vg83nb65v855cr9uhq0uvot5p5g0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "56564910566-gth6gsvttbsah2cdcrq0ifvk3n8c1fr2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.humaneeating.hep"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

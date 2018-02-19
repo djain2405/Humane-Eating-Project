@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.johnkil.print.PrintView
+        android:id="@+id/star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_small"
+        app:iconColor="@color/amber"
+        app:iconSize="@dimen/fab_icon_size"
+        app:iconText="@string/ic_star" />
+
+    <com.github.johnkil.print.PrintView
+        android:id="@+id/star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_small"
+        app:iconColor="@color/amber"
+        app:iconSize="@dimen/fab_icon_size"
+        app:iconText="@string/ic_star" />
+
+    <com.github.johnkil.print.PrintView
+        android:id="@+id/star3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_small"
+        app:iconColor="@color/amber"
+        app:iconSize="@dimen/fab_icon_size"
+        app:iconText="@string/ic_star" />
+
+    <com.github.johnkil.print.PrintView
+        android:id="@+id/star4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_small"
+        app:iconColor="@color/amber"
+        app:iconSize="@dimen/fab_icon_size"
+        app:iconText="@string/ic_star_half" />
+
+    <com.github.johnkil.print.PrintView
+        android:id="@+id/star5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_small"
+        app:iconColor="@color/amber"
+        app:iconSize="@dimen/fab_icon_size"
+        app:iconText="@string/ic_star_outline" />
+</merge>

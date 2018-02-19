@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+     <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/HEPActionBarStyle</item>
+        <item name="actionBarStyle">@style/HEPActionBarStyle</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="HEPActionBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/pattern_green_bg2x</item>
+        <item name="background">@drawable/pattern_green_bg2x</item>
+    </style>
+    
+</resources>

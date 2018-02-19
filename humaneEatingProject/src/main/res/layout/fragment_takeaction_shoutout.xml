@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shoutout_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75FFFFFF">
+
+    <ImageButton
+        android:id="@+id/close_share_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/closex_2x"/>
+
+    <TextView
+        android:id="@+id/share_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/close_share_button"
+        android:layout_marginTop="70dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:text="@string/share"/>
+
+    <TextView
+        android:id="@+id/share_conf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/share_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"
+        android:text="@string/take_action_share_conf"/>
+
+    <View
+        android:id="@+id/text_separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@id/share_conf"
+        android:layout_alignRight="@id/share_conf"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/share_conf"
+        android:background="@color/text_primary"/>
+
+    <Button
+        android:id="@+id/share_fb_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/facebook_share_button_2x"
+        android:layout_below="@id/text_separator"
+        android:textColor="@color/white"
+        android:text="@string/take_action_share_fb"/>
+
+    <RelativeLayout
+        android:id="@+id/share_fb_clickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/share_fb_button"
+        android:layout_alignRight="@id/share_fb_button"
+        android:layout_alignTop="@id/share_fb_button"
+        android:layout_alignBottom="@id/share_fb_button"
+        android:background="@drawable/transparency_selector"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/share_twitter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/twitter_share_button_2x"
+        android:layout_below="@id/share_fb_button"
+        android:textColor="@color/white"
+        android:text="@string/take_action_share_twitter"/>
+
+    <RelativeLayout
+        android:id="@+id/share_twitter_clickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/share_twitter_button"
+        android:layout_alignRight="@id/share_twitter_button"
+        android:layout_alignTop="@id/share_twitter_button"
+        android:layout_alignBottom="@id/share_twitter_button"
+        android:background="@drawable/transparency_selector"
+        android:clickable="true"/>
+
+</RelativeLayout>

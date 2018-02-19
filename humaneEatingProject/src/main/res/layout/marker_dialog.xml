@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:clickable="false"
+              android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/marker_background"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_end"
+            android:layout_alignTop="@+id/humane_status"
+            android:background="@drawable/bubble_green2x"/>
+
+        <TextView
+            android:id="@+id/humane_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Vegan" />
+
+        <TextView
+            android:id="@+id/humane_status2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/humane_status"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Vegan" />
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/humane_status2"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:text="Native Foods"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignLeft="@+id/humane_status"/>
+
+        <ImageView
+            android:id="@+id/rating_bar"
+
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:rating="0"
+            android:layout_below="@+id/restaurant_description"
+            android:layout_alignLeft="@+id/restaurant_description"
+            android:layout_alignStart="@+id/restaurant_description"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/cuisine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rating_bar"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:text="American,"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignWithParentIfMissing="false"/>
+
+        <View
+            android:id="@+id/view_end"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cuisine"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignWithParentIfMissing="false"/>
+
+        <TextView
+            android:id="@+id/price_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_bar"
+            android:layout_toRightOf="@+id/cuisine"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:text="$$$ -" />
+
+        <TextView
+            android:id="@+id/ratings_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rating_bar"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:text="# yelp reviews"
+            android:paddingRight="30dp"
+            />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-mi"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:textSize="12sp"
+            android:layout_alignTop="@+id/humane_status"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/restaurant_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="restaurant description in maybe 2 lines"
+            android:layout_below="@+id/restaurant_name"
+            android:layout_alignLeft="@+id/restaurant_name"
+            android:layout_alignStart="@+id/restaurant_name"
+            android:paddingRight="30dp"
+            android:paddingBottom="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Expenses"
+            android:paddingRight="30dp"
+            android:maxLines="1"
+            android:layout_alignBaseline="@+id/price_range"
+            android:layout_alignBottom="@+id/price_range"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

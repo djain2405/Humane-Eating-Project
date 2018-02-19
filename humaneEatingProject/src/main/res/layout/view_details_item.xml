@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.johnkil.print.PrintButton
+        android:paddingLeft="@dimen/spacing_default"
+        android:id="@+id/detail_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/spacing_default"
+        app:iconColor="@color/primary"
+        android:background="@drawable/btn_rippled"
+        app:iconSize="@dimen/fab_icon_size"
+        app:iconText="@string/ic_android" />
+
+    <LinearLayout
+        android:id="@+id/detailsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/detail_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detail_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_primary" />
+
+        <TextView
+            android:id="@+id/detail_additional_info"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_secondary" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@+id/detailsContainer"
+        android:layout_alignParentBottom="true"
+        android:background="@color/icon_inactive" />
+</merge>

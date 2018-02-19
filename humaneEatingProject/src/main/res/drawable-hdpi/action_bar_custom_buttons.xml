@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!-- Button Focused Pressed-->
+    <item   android:state_pressed="true"
+            android:drawable="@drawable/top_medium_btn_touch2x">
+            <shape android:shape="rectangle"  >
+         <corners android:radius="10dip" />           
+     </shape>
+            
+            </item>
+
+    <!-- Button Default Image-->
+    <item   android:drawable="@drawable/top_medium_btn2x">
+       <shape android:shape="rectangle"  >
+         <corners android:radius="10dip" />           
+     </shape>
+    </item>
+
+</selector>
