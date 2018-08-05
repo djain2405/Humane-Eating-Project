@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.hep.afa"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="12"
+    android:versionName="2.5" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- as long as we check for a proper provider before displaying the call info, we don't need
+         to require telephony service - now our app can be installed on tablets as well -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <permission
+        android:name="org.hep.afa.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="org.hep.afa.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+
+    <application
+        android:name=".main.HEPApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon_76"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name=".main.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".restaurantdetails.RestaurantDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.Material.Custom" >
+        </activity>
+        <activity
+            android:name=".main.HumaneEatingMainActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name=".welcome.WelcomePageActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name=".activity.LegendActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Legend"
+            android:theme="@style/CustomActionBarTheme" >
+
+            <!-- Tesing for up navigation -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.DonationActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/donate"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+        </activity>
+        <activity
+            android:name=".addlisting.AutoAddListingActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Add listing"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+        </activity>
+        <activity
+            android:name=".addlisting.AddListingActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Add Listing"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.FriendsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/friends"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+        </activity>
+        <activity
+            android:name=".takeaction.TakeActionActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/take_action"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.LearnActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Humane Eating"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+        </activity>
+        <activity
+            android:name=".feed.FeedActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/feed_header_actionbar"
+            android:theme="@style/CustomActionBarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+
+            <!-- facebook feed -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="@string/hashtag_scheme"/>
+                <data android:scheme="@string/url_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FilterActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+        </activity>
+        <activity
+            android:name=".main.WebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="WebViewActivity"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hep.afa.main.HumaneEatingMainActivity" />
+        </activity>
+
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+                  android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+                 android:enabled="true"
+                 android:exported="false"/>
+
+        <!-- Used for Google Play Store Campaign Measurement / Comment: Doesn't require any code level implementation.. -->
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+                  android:enabled="true"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"
+                 android:enabled="true"
+                 android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Uncomment <DEBUG> when developing the app / Uncomment <RELEASE> when building release apk. -->
+
+        <!-- <DEBUG>-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDzW-eLH1hd9ZO1zXdXp8lpCdRkHTiFoGw"/>
+
+        <!-- <RELEASE>
+         <meta-data
+             android:name="com.google.android.maps.v2.API_KEY"
+             android:value="AIzaSyAOHcbB16lwa0vaY6Hg_o6Ey8dgf9JdHLs" />-->
+
+    <!-- Facebook -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            tools:replace="theme"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_id"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider241032352751451"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+        <!--<meta-data-->
+            <!--android:name="com.facebook.sdk.ApplicationId"-->
+            <!--android:value="@string/fb_id" />-->
+
+    </application>
+
+</manifest>

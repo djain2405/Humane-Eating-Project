@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/hind_vadodara"
+        android:gravity="center|center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:text="@string/add_listing"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/add_manually"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/action_bar_custom_buttons"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="8dp"
+        android:text="@string/add_manually"
+        android:textColor="@android:color/white"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>
